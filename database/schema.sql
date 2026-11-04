@@ -20,6 +20,7 @@ CREATE TABLE users (
   INDEX idx_users_org (org_id)
 ) ENGINE=InnoDB;
 
+
 CREATE TABLE vehicles (
   id                 CHAR(36) PRIMARY KEY DEFAULT (UUID()),
   org_id             CHAR(36) NOT NULL,
